@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lab-1-python-with-load-balancer"
+version = "0.1.0"
+description = "A simple Fast API Python application using nginx load balancer"
+authors = ["Grigorii Praskura <gregorypraskura@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "lab_1_python_with_load_balancer"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gunicorn = "^20.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
