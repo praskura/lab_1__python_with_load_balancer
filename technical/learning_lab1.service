@@ -1,0 +1,13 @@
+[Unit]
+Description=Uvicorn instance to serve learning_lab1 project
+After=network.target
+
+[Service]
+User=gpraskura
+Group=www-data
+WorkingDirectory=/home/gpraskura/Projects/lab_1__python_with_load_balancer
+Environment="PATH=/home/gpraskura/Projects/lab_1__python_with_load_balancer/.venv/bin"
+ExecStart=/home/gpraskura/Projects/lab_1__python_with_load_balancer/.venv/bin/uvicorn main:app
+
+[Install]
+WantedBy=multi-user.target
