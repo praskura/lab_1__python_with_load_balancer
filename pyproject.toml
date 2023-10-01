@@ -11,6 +11,7 @@ packages = [{include = "lab_1_python_with_load_balancer"}]
 python = "^3.11"
 fastapi = "^0.100.0"
 uvicorn = "^0.22.0"
+pydantic-settings = "^2.0.3"
 
 
 [build-system]
