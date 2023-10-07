@@ -1,6 +1,5 @@
 import os
 import asyncpg
-import json
 from fastapi import FastAPI
 from pydantic_settings import BaseSettings
 from settings import Settings
